@@ -1,3 +1,12 @@
-Flask is a web development framework which is written in python language.
-Flask was developed in 2010 by Armin Ronacher. 
-It can be used to create APIs as well.
+* Flask is a web development framework which is written in python language.
+* Flask was developed in 2010 by Armin Ronacher. 
+* It can be used to create APIs as well.
+
+* Flask is used for API generations and can be combined with Angular JS to create a complete web app.
+* While setting up a angular js code along with Flask, we got to run both the codes i.e angular(for front end) and the flask-python code on 2 different terminals. 
+* If we just run one of them, we are bound to et Server not available error. 
+* There is a command when you run at the end of setting up all the files in your project i.e 'np serve'. If 'np serve' command doesnt run in the first go after installing all the requirements of a specific project then it is an issue with Execution policy.
+* The commnd to resolve it is: First step: set-ExecutionPolicy RemoteSigned -Scope CurrentUser 
+                            Second Step: Get-ExecutionPolicy
+                            Third Step: Get-ExecutionPolicy -list
+* Now run the 'np serve' command
