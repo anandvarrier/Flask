@@ -12,24 +12,29 @@
         height: 360px;
         width: 100%;
         object-fit:cover;
+        margin-bottom: 16px;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <h3 class="text-center">About Jovian</h3>
-    <img class="img-fluid" id="banner" src="https://flask--anandvarrier.repl.co/static/careerimg.jpg">
+      <h3 class="text-center mt-2 mb-4">{{company_name}} Careers</h3>
+      <div class="row" style="margin-bottom:32px">
         <p class="lead">Jovian Careers is a leading provider of innovative career development solutions designed to empower individuals and organizations in achieving their professional goals. With a strong focus on delivering high-quality services, we strive to bridge the gap between talent and opportunity.
 
 At Jovian Careers, we understand the ever-evolving dynamics of the job market and the challenges individuals face in navigating their career paths. Our mission is to equip individuals with the knowledge, skills, and resources they need to thrive in today's competitive landscape.
 
 Choose Jovian Careers as your trusted partner in career development, and let us help you unlock new opportunities, navigate career transitions, and achieve professional success.</p>
+      
+      </div>
+    <img class="img-fluid" id="banner" src="https://flask--anandvarrier.repl.co/static/careerimg.jpg">
+        
     <h3 class="text-center mt-2">Open Positions</h3>
-      {% for jobs %}
         <div>
-          <h4>{{job['title']}}</h4>
+          {% for job in jobs %}
+            {% include 'jobitem.html' %}
+          {% endfor %}
         </div>
-      {% endfor %}
       <p class="lead">To Do - Show the Jobs here</p>
       <div class="text-center">
         <button class="btn btn-primary btn-lg">Contact Us</button>
