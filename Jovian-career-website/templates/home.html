@@ -16,6 +16,7 @@
     </style>
   </head>
   <body>
+    {% include 'nav.html' %}
     <img class="img-fluid" id="banner" src="https://flask--anandvarrier.repl.co/static/careerimg.jpg">
     <div class="container">
       <h1 class="text-center mt-2 mb-4">
@@ -24,11 +25,11 @@
       <div class="row" style="margin-bottom:32px">
         <div class="col-md-6">
       <p class="lead">
-        At Jovian, we’re on a mission to build the most highly reputed technical university in the world, and we’re building it completely online. Our flagship data science program helps working professionals with a background in programming or analytics make a career transition to data science. We also offer several free beginner-friendly courses and have a fast-growing community of 200,000+ users.
+        Jovian Careers is a leading online platform dedicated to helping job seekers find relevant and rewarding career opportunities. With its user-friendly interface and extensive database of job listings, Jovian Careers connects candidates with employers from various industries. The platform offers a streamlined job search experience, allowing users to filter and search for positions based on their preferred criteria. Jovian Careers also provides valuable resources and tools to support candidates throughout their job search journey, including resume building tips, interview guidance, and career advice. With its commitment to helping individuals find their dream jobs, Jovian Careers serves as a trusted partner for both job seekers and employers in the competitive job market. We also offer several free beginner-friendly courses and have a fast-growing community of 200,000+ users.
       </p>
         </div>
         <div class="d-none d-md-block col-md-6">
-        <img src="/static/people.jpeg" style="height:320px;border-radius:4px;">
+        <img class="img-fluid" src="/static/image2.jpg" style="height:430px;border-radius:4px;">
         </div>
       </div>
       <h2 class="text-center mt-2 mb-4">Open Positions</h2>
@@ -40,7 +41,7 @@
       <div class="text-center">
       <a class="btn btn-primary btn-lg" href="mailto:hello@jovian.ai?subject=Question%20about%20Job%20Opernings&body=My%20name%3A%20%3Cyour%20name%20here%3E%0D%0A%0D%0AMy%20questions%3A%20%3Center%20question%20here%3E%0D%0A">Contact Us</a>
       </div>
+      {% include 'footer.html' %}
     </div>
-    
   </body>
 </html>
